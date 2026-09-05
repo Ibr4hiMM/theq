@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Theq (ثق) — find a workshop, book it, talk to the shop">
+  <defs>
+    <radialGradient id="glow" cx="86%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#b45309" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="360" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="#ffffff"/>
+    <rect width="1200" height="360" fill="url(#glow)"/>
+    <text x="1120" y="262" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="220" font-weight="800" fill="#f0b429">ثق</text>
+    <rect x="64" y="96" width="44" height="4" rx="2" fill="#b45309"/>
+    <text x="64" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="-1.5" fill="#1f2328">Theq</text>
+    <text x="64" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" fill="#59636e">Find a workshop. Book it. Talk to the shop.</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">
+      <rect x="64" y="248" width="70" height="30" rx="15" fill="#f6f8fa"/>
+      <text x="99" y="268" text-anchor="middle" fill="#1f2328">iOS</text>
+      <rect x="144" y="248" width="132" height="30" rx="15" fill="#f6f8fa"/>
+      <text x="210" y="268" text-anchor="middle" fill="#1f2328">Saudi Arabia</text>
+      <rect x="286" y="248" width="150" height="30" rx="15" fill="#f6f8fa"/>
+      <text x="361" y="268" text-anchor="middle" fill="#1f2328">Arabic · English</text>
+    </g>
+  </g>
+</svg>
