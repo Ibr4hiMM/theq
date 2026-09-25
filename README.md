@@ -47,19 +47,24 @@
 
 ```mermaid
 flowchart LR
-  app["iOS app<br/>Swift · SwiftUI"]
-  auth["Firebase Auth<br/>phone OTP"]
-  db[("Supabase<br/>Postgres · Storage · Realtime")]
-  loc["Core Location"]
-  app -- "sign in" --> auth
-  app -- "requests · bookings · chat" --> db
-  app -- "nearby workshops" --> loc
+  app["iOS app<br/>Flutter · Dart"]
+  firebase["Firebase<br/>phone verification · push"]
+  api["API<br/>Node.js · Express · TypeScript"]
+  ai["AI assistant<br/>Python · FastAPI · LangChain"]
+  db[("Supabase<br/>Postgres · Storage")]
+  app -- "verify phone · notifications" --> firebase
+  app -- "requests · bookings · chat" --> api
+  api --> db
+  api -- "assistant messages" --> ai
+  ai -- "workshop search" --> db
 ```
 
-- **App:** Swift and SwiftUI, built for RTL from day one.
-- **Auth:** Firebase phone authentication with SMS verification.
-- **Data:** Supabase for vehicles, service requests, bookings, and chat.
-- **Location:** Core Location for nearby workshops and distances.
+- **App:** Flutter and Dart, built for Arabic and English with right-to-left support from day one.
+- **API:** Node.js, Express and TypeScript, with Supabase (Postgres and Storage) for vehicles, service requests, bookings, chat and photos.
+- **Auth:** Firebase phone verification with SMS codes.
+- **Notifications:** Firebase Cloud Messaging for booking and chat updates.
+- **Location:** the device's location and Google Maps for nearby workshops and distances.
+- **AI assistant:** a LangChain agent behind a FastAPI service that finds workshops and helps you around the app, in Arabic or English.
 
 ## Privacy
 
